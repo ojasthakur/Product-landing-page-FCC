@@ -369,7 +369,7 @@ ul {
   .hero {
     padding-top: 5rem;
     background: url("./images//main-desktop.jpg") center/cover no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overscroll-behavior-block: unset;
   }
   .hero-banner {
