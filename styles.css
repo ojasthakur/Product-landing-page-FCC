@@ -359,14 +359,13 @@ ul {
   font-weight: 600;
 }
 .video-section {
-  background: var(--grey-200);
 }
 
 #video {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 157.5px;
 }
 .video-container {
   margin: 0 auto;
@@ -378,5 +377,9 @@ ul {
   }
   .video-container {
     padding: 0 15vw;
+  }
+  #video {
+    width: 640px;
+    height: 395px;
   }
 }
