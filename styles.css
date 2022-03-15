@@ -270,7 +270,7 @@ img {
 }
 
 .show-links {
-  height: 240px;
+  height: 300px;
 }
 
 /* MEDIA QUERY FOR LARGE DISPLAY */
@@ -568,5 +568,121 @@ img {
 @media screen and (min-width: 992px) {
   .product-card {
     flex: 0 0 calc(33.33% - 1rem);
+  }
+}
+
+.registration {
+  background: var(--grey-apple-bg);
+}
+.registration-title p {
+  color: var(--grey-apple);
+}
+
+.registration-form {
+  display: flex;
+  max-width: 28rem;
+  justify-content: space-evenly;
+}
+
+.form-control {
+  flex: 1 1 auto;
+  /* color: var(--grey-apple); */
+}
+
+.form-control,
+.btn-submit {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: var(--letterSpacing);
+  background: var(--white);
+  text-transform: capitalize;
+}
+.btn-submit {
+  background: var(--primary-500);
+  color: var(--grey-200);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .registration-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .registration-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+  }
+}
+
+.footer {
+  background: var(--grey-apple);
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-links,
+.footer-icons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-right: 1rem;
+  letter-spacing: var(--spacing);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--grey-apple-bg);
+}
+
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-primary-8);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.footer-icon:hover {
+  color: var(--grey-apple-bg);
+}
+
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .footer-links {
+    align-self: center;
+  }
+  .copyright {
+    align-self: center;
   }
 }
