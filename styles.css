@@ -43,6 +43,7 @@ html {
   --grey-800: #1e293b;
   --grey-900: #0f172a;
   --grey-apple: rgb(153, 153, 153);
+  --grey-apple-bg: rgb(251, 251, 253);
 
   /* rest of the colors */
   --black: #222;
@@ -296,6 +297,7 @@ ul {
   }
   .nav-link {
     margin-right: 3rem;
+    font-size: 1.4rem;
   }
   .nav-link:hover {
     background: none;
@@ -303,12 +305,23 @@ ul {
   }
 }
 /* SECTION CENTER GLOBAL STYLE */
-.section {
+.video-section {
+  background: var(--white);
   padding: 5rem 0;
 }
 .section-title {
   text-align: center;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-container {
+  max-width: 12rem;
+}
+.img-container .img {
+  border-radius: 50%;
+  box-shadow: var(--shadow-3);
 }
 
 .section-title h2 {
@@ -324,6 +337,11 @@ ul {
   max-width: 1170px;
 }
 
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 /* Banner */
 .hero {
   padding-top: 10rem;
@@ -426,5 +444,77 @@ ul {
   }
   .video-section .section-title {
     margin-right: 10rem;
+  }
+}
+
+* {
+  /* border: 2px solid red; */
+}
+
+.qualities {
+  /* border: 4px solid blue; */
+  background: var(--grey-apple-bg);
+  padding-top: 4rem;
+}
+.qualities .section-title h3 {
+  /* text-decoration: underline; */
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.quality {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.quality-icon {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--grey-apple);
+  display: inline-block;
+  /* padding: 0.5rem; */
+  margin-bottom: 0.5rem;
+}
+
+.quality-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 576px) {
+  .qualities-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .quality {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .quality {
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .quality {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+  }
+  .quality-icon {
+    align-self: flex-start;
+  }
+
+  .quality-info {
+    padding-left: 1rem;
+  }
+  .quality-title {
+    margin-bottom: 0.5rem;
   }
 }

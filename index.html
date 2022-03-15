@@ -24,7 +24,9 @@
 
                 <!-- nav-header -->
                 <div class="nav-header">
-                    <img src="./images/apple.svg" alt="" class="nav-logo" id="header-img">
+                    <a href="index.html">
+                        <img src="./images/apple.svg" alt="" class="nav-logo" id="header-img">
+                    </a>
                     <button type="button" class="nav-toggle" id="nav-toggle">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -35,19 +37,19 @@
                 <ul id="nav-links" class="nav-links">
                     <!-- single link -->
                     <li>
-                        <a href="#home" class="nav-link">home</a>
+                        <a href="#header" class="nav-link scroll-link">home</a>
                     </li>
                     <!-- end of single link -->
 
                     <!-- single link -->
                     <li>
-                        <a href="#products" class="nav-link">products</a>
+                        <a href="#review" class="nav-link scroll-link">review</a>
                     </li>
                     <!-- end of single link -->
 
                     <!-- single link -->
                     <li>
-                        <a href="#about" class="nav-link">about</a>
+                        <a href="#qualities" class="nav-link scroll-link">qualities</a>
                     </li>
                     <!-- end of single link -->
                 </ul>
@@ -75,19 +77,83 @@
     </header>
     <!-- end of header -->
 
-    <div class="section video-section">
+    <div class="section video-section" id="review">
         <div class="section-title">
+            <a href="https://www.youtube.com/user/marquesbrownlee">
+                <div class="img-container">
+                    <img src="./images/mkbhd.jpg" alt="" class="img">
+                </div>
+            </a>
             <h4>See what MKBHD has to say about us</h4>
         </div>
         <div class="section-center video-section-center">
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WUZk83honNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WUZk83honNQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
 
+    <div class="section qualities" id="qualities">
+        <div class="section-title">
+            <h3>What are we known for?</h3>
+        </div>
+        <div class="section-center qualities-center">
+            <!-- single card -->
+            <article class="quality">
+                <span class="quality-icon">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </span>
 
+                <div class="quality-info">
+                    <h4 class="quality-title">
+                        design
+                    </h4>
+                    <p class="quality-text">
+                        that inspires future!
+                    </p>
+                </div>
+            </article>
+            <!-- end of single card -->
+
+            <!-- single card -->
+            <article class="quality">
+                <span class="quality-icon">
+                    <i class="fa-solid fa-battery-full"></i>
+                </span>
+
+                <div class="quality-info">
+                    <h4 class="quality-title">
+                        battery-life
+                    </h4>
+                    <p class="quality-text">
+                        for the longest of days
+                    </p>
+                </div>
+            </article>
+            <!-- end of single card -->
+
+            <!-- single card -->
+            <article class="quality">
+                <span class="quality-icon">
+                    <i class="fa-solid fa-gauge-simple-high"></i>
+                </span>
+
+                <div class="quality-info">
+                    <h4 class="quality-title">
+                        speed
+                    </h4>
+                    <p class="quality-text">
+                        for when time is of the essence!
+                    </p>
+                </div>
+            </article>
+            <!-- end of single card -->
+        </div>
+    </div>
     <!-- ------------------------------------ -->
     <!-- qualities section -->
     <!-- end of qualities section -->
