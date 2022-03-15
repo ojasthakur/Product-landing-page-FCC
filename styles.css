@@ -172,7 +172,7 @@ ul {
   padding: 0;
 }
 
-.img {
+img {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -270,7 +270,7 @@ ul {
 }
 
 .show-links {
-  height: 180px;
+  height: 240px;
 }
 
 /* MEDIA QUERY FOR LARGE DISPLAY */
@@ -305,7 +305,7 @@ ul {
   }
 }
 /* SECTION CENTER GLOBAL STYLE */
-.video-section {
+.section {
   background: var(--white);
   padding: 5rem 0;
 }
@@ -402,15 +402,18 @@ ul {
   }
 }
 /* video */
+.video-section {
+  background: var(--white);
+}
 .video-section .section-title h4 {
   font-weight: 600;
   text-decoration: underline;
   line-height: 1.3;
 }
-.video-section-center {
+/* .video-section-center {
   display: flex;
-  justify-content: center;
-}
+  justify-content: space-between;
+} */
 
 .video-container iframe {
   position: absolute;
@@ -432,14 +435,14 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
-  .video-section {
+  .video-section-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
   }
   .video-container {
-    margin: 0 10rem;
+    margin: 0 5rem;
     padding: 10rem 0;
   }
   .video-section .section-title {
@@ -516,5 +519,54 @@ ul {
   }
   .quality-title {
     margin-bottom: 0.5rem;
+  }
+}
+
+/* Products section */
+
+.product-card {
+  background: var(--grey-apple-bg);
+  box-shadow: var(--shadow-2);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+  /* max-width: 20rem; */
+  /* height: 20rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-4);
+  transform: scale(1.01);
+}
+
+.product-img-container {
+  position: relative;
+  /* not really needed in this project */
+}
+
+.product-img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1.25rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .products-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-card {
+    flex: 0 0 calc(33.33% - 1rem);
   }
 }
